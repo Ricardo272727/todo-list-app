@@ -9,6 +9,13 @@ Users can:
 
 The task list is shared with all users registered 
 
+
+![Assign task to user](https://github.com/Ricardo272727/todo-list-app/blob/master/screenshots/AssignTask.png)
+
+![Message delete task](https://github.com/Ricardo272727/todo-list-app/blob/master/screenshots/DeleteTask.png)
+
+
+
 ### How to run this project?
 
 #### Configure project
