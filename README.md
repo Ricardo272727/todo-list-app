@@ -9,14 +9,11 @@ Users can:
 
 The task list is shared with all users registered 
 
-![Login screen](https://github.com/Ricardo272727/todo-list-app/blob/master/screenshots/DesktopLogin.png)
+![Login screen](https://github.com/Ricardo272727/todo-list-app/blob/master/screenshots/LoginAndRegister.png)
 
-![User settings](https://github.com/Ricardo272727/todo-list-app/blob/master/screenshots/NotificationUserUpdated.png)
+![Login screen](https://github.com/Ricardo272727/todo-list-app/blob/master/screenshots/Tasks.png)
 
-![Assign task to user](https://github.com/Ricardo272727/todo-list-app/blob/master/screenshots/AssignTask.png)
-
-![Message delete task](https://github.com/Ricardo272727/todo-list-app/blob/master/screenshots/DeleteTask.png)
-
+![User settings](https://github.com/Ricardo272727/todo-list-app/blob/master/screenshots/DeleteTaskAndSettings.png)
 
 
 ### How to run this project?
