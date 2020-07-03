@@ -22,13 +22,6 @@ The task list is shared with all users registered
 
 - Download the project ( git clone / download zip )
 
-
-- Switch to branch production:
-
-```
-$ git checkout production
-```
-
 - Configure
 
 ```
@@ -48,7 +41,7 @@ After configure the project:
 $ mongod
 ```
 
-- Start app
+- Start app (in /server folder)
 
 ```
 $ npm start
