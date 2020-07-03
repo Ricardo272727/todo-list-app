@@ -9,6 +9,9 @@ Users can:
 
 The task list is shared with all users registered 
 
+![Login screen](https://github.com/Ricardo272727/todo-list-app/blob/master/screenshots/DesktopLogin.png)
+
+![User settings](https://github.com/Ricardo272727/todo-list-app/blob/master/screenshots/NotificationUserUpdated.png)
 
 ![Assign task to user](https://github.com/Ricardo272727/todo-list-app/blob/master/screenshots/AssignTask.png)
 
