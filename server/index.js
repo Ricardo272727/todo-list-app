@@ -1,4 +1,5 @@
 const express = require('express');
+const path = require('path');
 const app = express();
 const bodyParser = require('body-parser');  
 const session = require('express-session');
@@ -8,7 +9,6 @@ const MongoClient = require('mongodb').MongoClient,
 const config = require('./config.js');
 const FactoryUserController = require('./controllers/user.js');
 const FactoryTaskController = require('./controllers/task.js');
-const setupTokens = require('./setupTokens.js');
 const sessionMiddleware = require('./middlewares/session.js');
 const cors = require('cors');
 
@@ -19,9 +19,6 @@ MongoClient.connect(config.dbUrl, { useUnifiedTopology: true }, async function(e
   console.log("Connected correctly to database");
   
   const db = client.db(config.dbName);
-  const taskToken = await setupTokens(db);
-  assert.equal(null, taskToken.err);
-  console.log('Task token: ', taskToken);
   const UserController = FactoryUserController(db);
   const TaskController = FactoryTaskController(db);
 
@@ -46,6 +43,12 @@ MongoClient.connect(config.dbUrl, { useUnifiedTopology: true }, async function(e
   };
   app.use(cors(corsOptions));
 
+  app.use(express.static(path.join(__dirname, 'build')));
+
+  app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'build', 'index.html'));
+  });
+
   app.post('/login', UserController.login );
 
   app.post('/logout', UserController.logout );
@@ -66,6 +69,7 @@ MongoClient.connect(config.dbUrl, { useUnifiedTopology: true }, async function(e
 
   app.listen(5000, () => {
      console.log("Server listen on port: 5000");
+     console.log("Go to localhost:5000");
   })
 })
 

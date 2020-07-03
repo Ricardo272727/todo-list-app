@@ -25,7 +25,7 @@ const users = [
 ];
 
 const initialState = {
-  appName: 'To do list app',
+  appName: 'Todo list app',
   tasks: [],
   user: null,
   users: users,

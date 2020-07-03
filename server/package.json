@@ -1,10 +1,10 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "description": "A simple backend for to do list app",
+  "description": "A simple backend for todo list app",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
+    "start": "node index.js",
     "test": "jest --watch index.test.js"
   },
   "author": "Ricardo Cuanalo",
