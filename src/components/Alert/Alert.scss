@@ -1,0 +1,74 @@
+.alert-cu{
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,.5);
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+
+  .body{
+    width: 90%;
+    padding: 1rem;
+    background: #ccc;
+
+    .close{
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-bottom: 1rem;
+      button{
+        background: red; 
+        color: white;
+        width: auto;
+      }
+    }
+
+    .message{
+       width: 100%;
+       text-align: center;
+     }
+    .controls{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 2rem;
+    }
+
+    button{
+      width: 25%;
+      color: white;
+      border: none;
+      padding-top: 0.3rem;
+      padding-bottom: 0.3rem;
+      margin-left: 1rem;
+      &:hover{
+        cursor: pointer;
+      }
+    }
+    .onCancel{
+      background: #F61919;
+    }
+    .onAccept{
+      background: #00C300;
+    }
+  }
+
+}
+
+
+@media (min-width: 768px){
+   .alert-cu{
+    .body{
+      width: 30%;
+    }
+   }
+}
+

@@ -1,0 +1,83 @@
+
+$bg-task: #FAFA4A;
+.task{
+  padding: 1rem;
+  
+  
+  
+  .content{
+    border: 1px solid #ccc;
+    padding: 1rem;
+    font-size: 0.9rem;
+    background: #FAFA4A;
+    p{
+       overflow: hidden;
+       text-overflow: ellipsis; 
+    }
+     textarea{
+      resize: none;
+      width: 100%;
+      height: 8rem;
+      background: $bg-task;
+      border: none;
+    }
+  }
+
+  .option{
+    padding: 0;
+    button{
+     width: 100% !important;
+     border: none;
+     padding: 0.3rem 0.2rem;
+     color: white;
+     border-radius: 0px;
+     box-shadow: none;
+     outline: none;
+     &:focus{
+      box-shadow: 1px 1px 1px transparent;
+
+     }
+     &:active{
+      box-shadow: none;
+     }
+    }
+    &.delete{
+      button{
+       background: #D61818;
+      }
+    }
+    &.edit{
+      
+      button{
+        background: #3A3AF9;
+      }
+
+    }
+    &.assign{
+      button{
+        background: #EA6A00;
+      }
+      .btn-group, .btn-group-vertical{
+        width: 100%;
+        box-shadow: none;
+      }
+      button.dropdown-item{
+        color: #4D4A4A;
+        background: white;
+        padding: 0.5rem;
+        &.selected{
+          background: green;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px){
+  .task{
+    .content{
+      font-size: 1.1rem;
+    }
+  }
+}

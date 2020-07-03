@@ -1,0 +1,47 @@
+@import "../variables";
+
+.form-cu{
+  padding: 1rem;
+  header{
+    text-align: center;
+    svg{
+      margin-bottom: 1rem;      
+      font-size: 3rem;
+    }
+    h2{
+      margin-bottom: 3rem;
+    }
+  }
+
+  label{
+    color: #5E5E5E;
+  }
+  input{
+   border-top: 0;
+   border-left: 0;
+   border-right: 0; 
+   border-bottom: 3px solid $gray;
+   border-radius: 0;
+   &:focus{
+    box-shadow: none;
+  
+   }
+  }
+  input[type="checkbox"]{
+   margin: 0; 
+   margin-right: 0.5rem;
+   position: relative;
+
+  }
+  button{
+    background: $blue;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 0.5rem 0.2rem;
+    &:disabled{
+      background: #8F8FAC;
+    }
+  }
+}

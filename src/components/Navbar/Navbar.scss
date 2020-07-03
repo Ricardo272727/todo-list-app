@@ -1,0 +1,55 @@
+@import "../variables";
+
+.navbar{
+  width: 100%;
+  padding: 0.7rem 0.6rem!important;
+  background: black;
+  .toggle-btn{
+    border: none;
+    color: white;
+    background: transparent;
+    font-size: 1.5rem;
+  }
+
+  ul{
+    width: 80%;
+    margin: 0;
+    margin-right: auto;
+    padding: 0;
+    li{
+      list-style: none;
+      display: inline-block;
+      margin-right: 0.4rem;
+      button{
+        width: 100%;
+        height: 100%;
+        border: none;
+        padding: 0.3rem 0.6rem;
+        &:hover{
+          color: white!important;
+        }
+        svg{
+          margin-left: 0.5rem;
+        }
+        span{
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+  
+  .user-info{
+    width: 20%;
+  }
+}
+
+
+@include media-breakpoint-up(md){
+  .navbar{
+    padding-left: 3rem !important;
+    padding-right: 3rem !important;
+    .user-info{
+      width: 5%;
+    }
+  }  
+}
